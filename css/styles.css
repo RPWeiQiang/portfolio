@@ -96,7 +96,14 @@ h6 {
     background-color: #c4d7efc3;
 }
 
-
+/* logo
+------------------------------------*/
+.logo{
+    position: absolute;
+    width: 8rem;
+    left: 1rem;
+    top: 1rem;
+}
 /* HOME page 
 ------------------------------------*/
 
@@ -306,10 +313,7 @@ object .bg-home-img {
 
 .content-wrapper-link{
     display: flex;
-    justify-content: center;
-    margin-bottom: 4rem;
-    margin-top: 2rem;
-
+    justify-content: center; 
 }
 
 .link {
@@ -419,13 +423,13 @@ body {
 }
 
 .project-content {
-    width: 35rem;
+    width: 30rem;
     margin: 0 auto;
 }
 
 .project-content .project-content-imgs {
-    width: 35rem;
-    height: 30rem;
+    width: 30rem;
+    height: 25rem;
     position: relative;
     border-radius: 2rem;
     transition: 0.5s ease-in-out;
@@ -580,43 +584,47 @@ body {
     display: flex;
     margin-left: 2rem;
     margin-right: 2rem;
-    padding-top: 5rem;
+    padding-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-h1 i {
+  }
+  
+  h1 i {
     color: rgb(0, 144, 241);
-}
-
-.card {
-    padding: 3rem 3rem 4rem 3rem;
+  }
+  
+  .card {
+    padding: 3rem 1rem 4rem 1rem;
     margin-left: 3rem;
     margin-right: 3rem;
     margin-bottom: 2rem;
-}
-
-.card-body h5 {
+  }
+  .card-body{
+    width: 143px;
+    height: 127px;
+  
+  }
+  .card-body h5 {
     color: darkblue;
-
-}
-
-.card-body p {
-    font-size: 1.1rem;
+  
+  }
+  
+  .card-body p {
+    font-size: 1rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
-}
-
-.footer-cloud {
+  }
+  
+  .footer-cloud {
     position: absolute;
     bottom: 0;
     width: 100%;
     z-index: 1;
-}
-
-.sun-container {
+  }
+  
+  .sun-container {
     position: absolute;
     bottom: 1rem;
     left: 49.5%;
@@ -628,9 +636,9 @@ h1 i {
     flex-direction: column;
     align-items: center;
     z-index: 2;
-}
-
-.footer-cloud-sun {
+  }
+  
+  .footer-cloud-sun {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -640,39 +648,39 @@ h1 i {
     height: auto;
     align-items: center;
     z-index: 0;
-
-}
-
-.social-text {
+  
+  }
+  
+  .social-text {
     color: whitesmoke;
     font-size: 1.5rem;
-}
-
-.socials {
+  }
+  
+  .socials {
     display: flex;
     justify-content: center;
     list-style-type: none;
     padding: 2rem 0 1rem 0;
     margin: 0;
-}
-
-.socials li {
+  }
+  
+  .socials li {
     margin: 0 15px;
-}
-
-.socials i {
+  }
+  
+  .socials i {
     font-size: 28px;
     color: whitesmoke;
     /* Adjust icon color */
     transition: opacity 0.3s;
-}
-
-.socials i:hover {
+  }
+  
+  .socials i:hover {
     opacity: 0.7;
-}
-
-.edit {
+  }
+  
+  .edit {
     color: whitesmoke;
     padding-bottom: 4rem;
     font-size: 0.8rem;
-}
+  }

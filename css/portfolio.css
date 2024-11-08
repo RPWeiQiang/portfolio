@@ -165,8 +165,8 @@ li {
 }
 
 #portfolio .portfolio-slider {
-  height: 55rem;
-  padding: 7rem 0 2rem 0;
+  height: 51.5rem;
+  padding: 5rem 0 2rem 0;
   position: relative;
 
 }
@@ -460,7 +460,7 @@ li {
   display: flex;
   margin-left: 2rem;
   margin-right: 2rem;
-  padding-top: 5rem;
+  padding-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -472,19 +472,23 @@ h1 i {
 }
 
 .card {
-  padding: 3rem 3rem 4rem 3rem;
+  padding: 3rem 1rem 4rem 1rem;
   margin-left: 3rem;
   margin-right: 3rem;
   margin-bottom: 2rem;
 }
+.card-body{
+  width: 143px;
+  height: 127px;
 
+}
 .card-body h5 {
   color: darkblue;
 
 }
 
 .card-body p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }

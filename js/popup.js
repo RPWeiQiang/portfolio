@@ -1,12 +1,12 @@
 // Lists of video sources and descriptions associated with each feature content item
 const videoSources = [
-    "/vid/display_all_cat_indi.mp4",
-    "/vid/search_artstore.mp4",
-    "/vid/add_items_to_cart_artstore.mp4",
-    "/vid/update_qty_artstore.mp4",
-    "/vid/delete_indivi_artstore.mp4",
-    "/vid/delete_all_artstore.mp4",
-    "/vid/contact_artstore.mp4"
+    "/vid/Display All Cat Indi.mp4",
+    "/vid/Search Artstore.mp4",
+    "/vid/Add Items To Cart Artstore.mp4",
+    "/vid/Update Qty Artstore.mp4",
+    "/vid/Delete Indivi Artstore.mp4",
+    "/vid/Delete All Artstore.mp4",
+    "/vid/Contact Artstore.mp4"
   ];
   
   const descriptions = [

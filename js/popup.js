@@ -1,12 +1,12 @@
 // Lists of video sources and descriptions associated with each feature content item
 const videoSources = [
-    "/vid/Display All Cat Indi.mp4",
-    "/vid/Search Artstore.mp4",
-    "/vid/Add Items To Cart Artstore.mp4",
-    "/vid/Update Qty Artstore.mp4",
-    "/vid/Delete Indivi Artstore.mp4",
-    "/vid/Delete All Artstore.mp4",
-    "/vid/Contact Artstore.mp4"
+    "vid/Display All Cat Indi.mp4",
+    "vid/Search Artstore.mp4",
+    "vid/Add Items To Cart Artstore.mp4",
+    "vid/Update Qty Artstore.mp4",
+    "vid/Delete Indivi Artstore.mp4",
+    "vid/Delete All Artstore.mp4",
+    "vid/Contact Artstore.mp4"
   ];
   
   const descriptions = [

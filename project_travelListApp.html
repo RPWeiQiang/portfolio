@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teo Wei Qiang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/project_travel.css">
+
+</head>
+
+<body>
+   <!--NAv-->
+   <nav class="nav-menu">
+    <img src="images/icon-menu(white).svg" style="width: 75px; height: 75px;" alt="nav-menu">
+    <div class="dropdown-content">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#recent-project">Recent Projects</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="#contact">contact</a>
+    </div>
+  </nav>
+  <div id="project-2">
+    <div class="content-wrapper">
+      <div class="header-position">
+        <h2 class="header">ART STORE</h2>
+        <i class="bi bi-circle-fill header-decor"></i>
+      </div>
+    </div>
+    <div class="project-vid-container">
+      <div class="project-vid">
+        <video src="vid/Travel-General.mp4"  disablePictureInPicture autoplay muted loop class="vid"></video>
+      </div>
+    </div>
+    <div class="project-container">
+      <div class="project-content">
+        <div class="project-cat">
+          <h4>CATERGORY :</h4>
+          <ul class="cat">
+            <li>
+              Web Design & Development
+            </li>
+        </div>
+        <div class="project-cat">
+          <h4>CREATED WITH :</h4>
+          <ul class="cat">
+            <li>
+              Jsx
+            </li>
+            <li>
+              React.js
+            </li>
+           
+          </ul>
+        </div>
+        <div class="project-des">
+          <div class="content-wrapper">
+            <div class="header-position">
+              <h2 class="header">DESCRIPTION</h2>
+              <i class="bi bi-circle-fill header-decor"></i>
+            </div>
+          </div>
+          <p class="des-text">
+            A <b>React Travel List App is a user-friendly tool designed to help travelers organize and manage their packing list efficiently</b>.
+            Users can add items along with their quantities, mark items as important, and check them off when packed. The app allows individual item deletion, clearing the entire list, or removing only packed items. A search function helps users quickly find specific items. Additionally, the app tracks packing progress by displaying the percentage of items packed, ensuring users stay on top of their preparation.
+            This intuitive app simplifies travel planning and ensures nothing is forgotten.
+          </p>
+        </div>
+        <div class="project-process">
+          <div class="content-wrapper">
+            <div class="header-position">
+              <h2 class="header">FEATURES</h2>
+              <i class="bi bi-circle-fill header-decor"></i>
+            </div>
+          </div>
+          <div class="project-feature-container">
+            <div class="feature-content">
+              <div class="feature-img">
+                <video  disablePictureInPicture onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;"
+                src="vid/Travel-Add.mp4" muted loop></video>
+              </div>
+              <div class="feature-des">
+                <p><span class="bold">Add</span> Item</p>
+              </div>
+            </div>
+            <div class="feature-content">
+              <div class="feature-img">
+                <video disablePictureInPicture onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;" 
+                src="vid/Travel-Display.mp4" muted loop></video>
+              </div>
+              <div class="feature-des">
+                <p><span class="bold">Display</span> Items</p>
+              </div>
+            </div>
+            <div class="feature-content">
+              <div class="feature-img">
+                <video disablePictureInPicture onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;" 
+                src="vid/Travel-Delete.mp4" muted loop></video>
+              </div>
+              <div class="feature-des">
+                <p><span class="bold">Delete</span> Item individual</p>
+              </div>
+            </div>
+            <div class="feature-content">
+              <div class="feature-img">
+                <video disablePictureInPicture onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;" 
+                src="vid/Travel-Clear.mp4" muted loop></video>
+              </div>
+              <div class="feature-des">
+                <p><span class="bold">Clear</span> of products base on needs</p>
+              </div>
+            </div>
+            <div class="feature-content">
+              <div class="feature-img">
+                <video disablePictureInPicture onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;" 
+                src="vid/Travel-Search.mp4" muted loop></video>
+              </div>
+              <div class="feature-des">
+                <p><span class="bold">Search</span> item</p>
+              </div>
+            </div>
+          </div>
+          <dialog id="feature-modal">
+            <div class="modal-content">
+              <video id="modal-video"  disablePictureInPicture controls autoplay muted loop>
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div id="modal-content-bottom">
+              <p id="modal-text">Feature description will appear here.</p>
+              <i class="bi bi-x" onclick="closeModal()"></i>
+              </div>
+            </div>
+          </dialog>
+        </div>
+          <div class="content-wrapper-btn">
+            <div class="header-position">
+              <a href="portfolio.html" class="link">View Portfolio for more projects</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="contact" class="fit">
+      <div>
+        <div class="sun-container">
+          <h6 class="social-text">socials</h6>
+          <ul class="socials">
+            <li>
+              <a href="" target="_blank"><i class="bi bi-facebook"></i></a>
+            </li>
+            <li>
+              <a href="" target="_blank"><i class="bi bi-instagram"></i></a>
+            </li>
+            <li>
+              <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
+            </li>
+          </ul>
+          <p class="edit">© 2024 by Teo Wei Qiang</p>
+        </div>
+      </div>
+      <div class="content-wrapper">
+        <div class="header-position">
+          <h2 class="header">CONTACT</h2>
+          <i class="bi bi-circle-fill header-decor"></i>
+        </div>
+      </div>
+      <div class="container-contact">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h1><i class="bi bi-file-earmark-person"></i></h1>
+                <h5>RESUME</h5>
+                <p>dcjdcdcjndncdncjd</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h1><i class="bi bi-envelope-fill"></i></h1>
+                <h5>E-MAIL</h5>
+                <p>weiqiangteo6@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h1><i class="bi bi-github"></i></i></h1>
+                <h5>GITHUB</h5>
+                <a href="https://github.com/RPWeiQiang"><p>RPWeiQiang</p></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="images/footer-cloud.svg" alt="footer-cloud" class="footer-cloud">
+      <div class="container-contact">
+        <div class="row">
+          <img src="images/contact-footer-sun.svg" alt="sun" style="max-width: 350px; min-width:350px">
+        </div>
+      </div>
+    </footer>
+    <script src="js/popup_travel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</body>
+
+</html>

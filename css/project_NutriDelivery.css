@@ -185,88 +185,24 @@ html {
   margin-bottom: 4rem;
 }
 
-.project-feature-container{
+.color-container {
   display: flex;
-  flex-wrap: wrap ;
   justify-content: center;
-}
-.feature-content{
-  width: 27rem;
-  margin: 0 1rem;
-}
-.feature-content:hover{
-  scale: 1.05;
-  cursor: pointer;
-}
-.feature-content .feature-img {
-  width: 27rem;
-  height: 20rem;
-  position: relative;
-  border-radius: 2rem;
-  background-color: aqua;
-  transition: 0.5s ease-in-out;
-}
-.feature-content video {
+  height: 3.4rem;
   width: 100%;
-  height: 100%;
-  border-radius: 2rem;
-  object-fit: cover;
-  
-}
-.feature-content .feature-des{
-  font-size: 1.3rem;
-  color: white;
-  margin-top: 1rem;
 }
 
-/* Modal
-------------------------------------*/
-#feature-modal {
-  width: 90%;
-  max-width: 900px;
-  padding: 20px;
-  border: none;
-  border-radius: 8px;
-  background-color: rgb(0, 144, 241,0);
- 
+.color-1, .color-2, .color-3, .color-4, .color-5 {
+  height: 3.4rem;
+  width: 3.4rem;
+  margin:0 0.5rem 0 0.5rem ;
 }
 
-#modal-video {
-  width: 100%;
-  height: auto;
-  background-color: #e1f4fd;
-  border-radius: 8px;
-}
-
-
-.modal-content {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-}
-
-#modal-content-bottom{
-  display: flex;
-  justify-content: space-between;
-  
-}
-#modal-text {
-  font-size: 1.3rem;
-  color: whitesmoke;
-}
-.modal-content i {
-  display: flex;
-  color: white;
-  font-size: 5rem;
-  justify-content: end;
-  align-items: flex-start;
-  margin-top: -1.3rem;
-}
-
-dialog::backdrop{
-  background-color: black;
-  opacity: 0.6;
-}
+.color-1 { background-color: #3EA800; }
+.color-2 { background-color: #3C763D; }
+.color-3 { background-color: #406538; }
+.color-4 { background-color: #0A4A00; }
+.color-5 { background-color: #1D3707; }
 
 /* header
 ------------------------------------*/

@@ -519,8 +519,15 @@ object .bg-home-img {
 
 .stat-photo {
     border-radius: 1rem;
-    height: 70%;
-    width: 0%;
+    height: 100%;
+    width: 70%;
+    background-color: #b6c3c9;
+    transition: width 1.5s ;
+}
+.stat-figma {
+    border-radius: 1rem;
+    height: 100%;
+    width: 85%;
     background-color: #b6c3c9;
     transition: width 1.5s ;
 }

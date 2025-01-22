@@ -40,13 +40,26 @@ html {
   
   .fit {
   
-    padding-top: 5rem;
+    padding-top: 3rem;
     position: relative;
   
   }
   .bold{
     font-weight: bold;
   }
+  ::-webkit-scrollbar{
+    width: 1.5rem;
+}
+::-webkit-scrollbar-track{
+    background: #e6f0f5;
+    border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb{
+  
+    background:#a7dbf3;
+    border: .25em solid #e1f4fd;
+    border-radius: 100vw;
+}
 /* nav
 ------------------------------------*/
   .nav-menu {
@@ -104,8 +117,57 @@ html {
     border-radius: 3rem;
     box-shadow: 3px 7px 20px rgba(0, 46, 93, 1);
 }
+.vid-decor-right{
+  position: absolute;
+  width: 35rem;
+  right: 0;
+  bottom: 0;
+  transform: translate(20%, 38%) scaleX(-1);
+  animation: cloud-right 2s ease-out infinite; 
+
+}
+.vid-decor-left{
+  position: absolute;
+  left:0;
+  width: 35rem;
+  bottom: 0;
+  transform: translate(-20%, 38%);
+   animation: cloud-left 2s ease-out infinite; 
+}
+
+@keyframes cloud-right {
+  0% {
+    transform: translate(20%, 38%) scaleX(-1)
+  }
+  25%{
+    transform: translate(20.5%, 38%) scaleX(-1)
+  }
+  75%{
+    transform: translate(19.5%, 38%) scaleX(-1)
+  }
+  100% {
+    transform: translate(20%, 38%) scaleX(-1)
+   
+  }
+}
+@keyframes cloud-left {
+  0% {
+    transform: translate(-20%, 38%);
+  }
+  25%{
+    transform: translate(-20.5%, 38%);
+  }
+  75%{
+    transform: translate(-19.5%, 38%);
+  }
+  100% {
+    transform: translate(-20%, 38%);
+   
+  }
+}
+
 .project-container{
-  padding:2rem 2rem 2rem 2rem ;
+  padding:3rem 2rem 2rem 2rem ;
   display: flex;
   justify-content: center;
 }
@@ -234,7 +296,7 @@ html {
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
-    margin-top: 4rem;
+    margin-top: 3rem;
 
 }
 
@@ -269,6 +331,7 @@ html {
   margin-left: 2rem;
   margin-right: 2rem;
   padding-top: 2rem;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -367,4 +430,19 @@ h1 i {
   color: whitesmoke;
   padding-bottom: 4rem;
   font-size: 0.8rem;
+}
+@media (max-width: 760px) {
+  .card-body {
+     width: auto;
+     align-items: center;
+  }
+  .vid-decor-right {
+      width: 150px;
+      right:5%;
+    
+  }
+  .vid-decor-left {
+      width: 150px;
+     left:5%;
+  }
 }

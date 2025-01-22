@@ -35,7 +35,9 @@ body {
     height: 100%;
     margin: 0px;
 }
-
+body {
+    overflow-x: hidden;
+  }
 
 .content-wrapper {
     margin: 0 auto;
@@ -65,7 +67,18 @@ h6 {
 .bold {
     font-weight: bold;
 }
-
+::-webkit-scrollbar{
+    width: 1.5rem;
+}
+::-webkit-scrollbar-track{
+    background: #e6f0f5;
+    border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb{
+    background:#a7dbf3;
+    border: .25em solid #e1f4fd;
+    border-radius: 100vw;
+}
 /* nav
 ------------------------------------*/
 .nav-menu {
@@ -138,9 +151,14 @@ h6 {
     width: 100%;
     object-fit: cover;
     object-position: top;
-
+    animation: home-img-animation linear;
+    animation-timeline: view();
+    animation-range: exit;
 }
-
+@keyframes home-img-animation{
+    25%{opacity: 1;}
+    85%,100%{opacity: 0; scale: 1.7;}
+}
 object .bg-home-img {
     position: absolute;
     height: 100vh;
@@ -366,8 +384,16 @@ object .bg-home-img {
     flex-wrap: wrap;
     margin-bottom: 3rem;
 }
-
-
+.about-img{
+    scale: .8; opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range-start: 100px;
+    animation-range-end:300px ;
+}
+@keyframes fade-in{
+    to {scale: 1; opacity: 1;}
+}
 
 /* about-hidden
 ------------------------------------*/
@@ -662,14 +688,21 @@ body {
 .project-content {
     width: 30rem;
     margin: 0 auto;
+    text-decoration: none;
 }
 
 .project-content .project-content-imgs {
+    scale: .8; opacity: 0;
     width: 30rem;
     height: 25rem;
     position: relative;
     border-radius: 2rem;
     transition: 0.5s ease-in-out;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range-start: 100px;
+    animation-range-end:300px ;
+   
 }
 
 
@@ -847,6 +880,25 @@ h1 i {
     width: 143px;
     height: 127px;
 
+}
+@media (max-width: 760px) {
+    .card-body {
+       width: auto;
+       align-items: center;
+    }
+    .portfolio-img-decor .cloud-top {
+        width: 100px;
+      
+    }
+    .portfolio-img-decor .cloud-bottom {
+        width: 120px;
+    }
+    .abt-decor-right{
+        width: 150px;
+    }
+    .abt-decor-left{
+        width: 150px;
+    }
 }
 
 .card-body h5 {

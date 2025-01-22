@@ -57,7 +57,16 @@ li {
   position: relative;
 
 }
+::-webkit-scrollbar-track{
+  background: #e6f0f5;
+  border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb{
 
+  background:#a7dbf3;
+  border: .25em solid #e1f4fd;
+  border-radius: 100vw;
+}
 
 /* nav
 ------------------------------------*/
@@ -126,7 +135,7 @@ li {
 .content-wrapper {
   display: flex;
   justify-content: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 
 }
 
@@ -480,7 +489,7 @@ h1 i {
 .card-body{
   width: 143px;
   height: 127px;
-
+  
 }
 .card-body h5 {
   color: darkblue;
@@ -559,4 +568,20 @@ h1 i {
   color: whitesmoke;
   padding-bottom: 4rem;
   font-size: 0.8rem;
+}
+
+@media (max-width: 760px) {
+  .card-body {
+     width: auto;
+     align-items: center;
+  }
+  .portfolio-slide-content .cloud-top {
+      width: 100px;
+      transform: translate(-10%, -40%);
+    
+  }
+  .portfolio-slide-content .cloud-bottom {
+      width: 120px;
+      transform: translate(10%, -85%);
+  }
 }

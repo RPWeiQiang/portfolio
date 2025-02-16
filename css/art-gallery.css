@@ -246,10 +246,20 @@ html {
   height: auto;
   vertical-align: middle;
   display: inline-block;
+  scale: .8; opacity: 0;
+  transition: 0.5s ease-in-out;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range-start: 100px;
+  animation-range-end:300px ;
+  
+}
+@keyframes fade-in{
+  to {scale: 1; opacity: 1;}
 }
 .grid-wrapper img:hover{
   scale: 1.02;
-  
+  cursor: pointer;
 }
 .grid-wrapper > div{
   display: flex;
@@ -587,6 +597,16 @@ h1 i {
 }
 
 @media (max-width: 760px) {
+  .header {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+}
+.project-content .header{
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: #e1f4fd ;
+}
   .card-body {
      width: auto;
      align-items: center;

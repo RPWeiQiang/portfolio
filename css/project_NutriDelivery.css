@@ -246,6 +246,17 @@ html {
 .project-process{
   margin-bottom: 4rem;
 }
+.feature-container{
+  scale: .8; opacity: 0;
+  transition: 0.5s ease-in-out;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range-start: 100px;
+  animation-range-end:300px ;
+}
+@keyframes fade-in{
+  to {scale: 1; opacity: 1;}
+}
 
 .color-container {
   display: flex;
@@ -307,7 +318,15 @@ html {
   margin-top: 3rem;
 
 }
+.alink {
+  font-size: 1.5rem;
+  color: rgb(0, 144, 241);
+  box-shadow: inset 0 0 0 0 rgb(0, 144, 241);
+}
+.alink:hover {
+  color: rgb(0, 120, 199);
 
+}
 .link {
   font-size: 1.5rem;
   color: rgb(0, 144, 241);
@@ -432,6 +451,16 @@ h1 i {
   font-size: 0.8rem;
 }
 @media (max-width: 760px) {
+  .header {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+}
+.project-content .header{
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: #e1f4fd ;
+}
   .card-body {
      width: auto;
      align-items: center;

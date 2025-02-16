@@ -239,6 +239,7 @@ html {
   color: whitesmoke;
   font-size:1.3rem ;
   text-align: center;
+  
 }
 
 .process-container-right{
@@ -248,11 +249,27 @@ html {
   margin-bottom: 1rem;
   justify-content: center;
   gap:1rem;
+  scale: .8; opacity: 0;
+  transition: 0.5s ease-in-out;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range-start: 100px;
+  animation-range-end:300px ;
   
 }
 .process-img{
   width: 20rem;
   height: 20rem;
+  scale: .8; opacity: 0;
+  transition: 0.5s ease-in-out;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range-start: 100px;
+  animation-range-end:300px ;
+  
+}
+@keyframes fade-in{
+  to {scale: 1; opacity: 1;}
 }
 .process-img img{
   width: 20rem;
@@ -265,7 +282,13 @@ html {
   border-radius: 2rem;
   background-color: white;
   position: relative;
- 
+  scale: .8; opacity: 0;
+  transition: 0.5s ease-in-out;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range-start: 100px;
+  animation-range-end:300px ;
+  
 }
 .process-img-duo img{
   width: 10rem;
@@ -325,6 +348,12 @@ html {
   margin-bottom: 1rem;
   justify-content: center;
   gap:1rem;
+  scale: .8; opacity: 0;
+  transition: 0.5s ease-in-out;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range-start: 100px;
+  animation-range-end:300px ;
   
 }
 @media (max-width:885px) {
@@ -544,6 +573,16 @@ h1 i {
   font-size: 0.8rem;
 }
 @media (max-width: 760px) {
+  .header {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+}
+.project-content .header{
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: #e1f4fd ;
+}
   .card-body {
      width: auto;
      align-items: center;

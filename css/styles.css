@@ -341,6 +341,13 @@ object .bg-home-img {
     z-index: 1;
     color: orangered;
 }
+.header-decor-ph {
+    position: absolute;
+    right: 100%;
+    top: 0%;
+    z-index: 1;
+    color: orangered;
+}
 
 .content-wrapper {
     display: flex;
@@ -462,6 +469,13 @@ object .bg-home-img {
 
     .core-skill {
         width: 100%;
+    }
+    .header-decor-ph {
+        position: absolute;
+        right: 78%;
+        top: 0%;
+        z-index: 1;
+        color: orangered;
     }
 }
 
@@ -749,7 +763,6 @@ body {
 }
 
 .project-content-imgs:hover {
-    scale: 1.07;
     box-shadow: 0px 7px 10px rgba(0, 46, 93, 1);
 
     .portfolio-img-decor {

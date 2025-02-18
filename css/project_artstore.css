@@ -47,7 +47,10 @@ html {
   .bold{
     font-weight: bold;
   }
-  ::-webkit-scrollbar-track{
+  ::-webkit-scrollbar{
+    width: 1.5rem;
+}
+::-webkit-scrollbar-track{
     background: #e6f0f5;
     border-radius: 100vw;
 }

@@ -57,6 +57,9 @@ li {
   position: relative;
 
 }
+::-webkit-scrollbar{
+  width: 1.5rem;
+}
 ::-webkit-scrollbar-track{
   background: #e6f0f5;
   border-radius: 100vw;
@@ -67,7 +70,6 @@ li {
   border: .25em solid #e1f4fd;
   border-radius: 100vw;
 }
-
 /* nav
 ------------------------------------*/
 .nav-menu {
